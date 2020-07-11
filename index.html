@@ -6,55 +6,63 @@
         <meta name="description" content="">
 	    <meta name="author" content=""> 
         <title>Debbs</title>
+        <!-- Google Font CSS -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-
-        <link rel="stylesheet" href="vendor/animate/animate.css">
-
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g==" crossorigin="anonymous" />       
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg==" crossorigin="anonymous" />
         <!-- Custom styles for the template -->
         <link rel="stylesheet" href="css/style.css">
-
     </head>
-    <body>
+
+    <!-- Content -->
+    <body data-spy="scroll" data-target="#site-nav" data-offset="64" id="home">
+
+        <!-- Navigation -->
         <header class="masthead sticky-top">
-            <nav class="navbar navbar-light navbar-expand-lg">
+            <nav class="navbar navbar-light navbar-expand-lg" id="site-nav">
                 <div class="container">
                     <h1 class="navbar-brand">
                         <a href="#home"><img src="images/site-icon.png" alt=""></a>
-                    </h1>
+                    </h1><!-- .navbar-brand -->
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggler" aria-controls="nav-toggler"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <img src="images/hamburger-img.png" alt="">
-                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <img class="hamburger" src="images/hamburger-img.png" alt="">
                     </button><!-- .navbar-toggler -->
 
                     <div class="navbar-collapse collapse justify-content-end" id="nav-toggler">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link px-lg-4" href="#home">Home</a>
+                            <a class="nav-item nav-link px-lg-4 active" href="#home">Home</a>
                             <a class="nav-item nav-link px-lg-4" href="#about">About</a>
                             <a class="nav-item nav-link px-lg-4" href="#project">Portfolio</a>
                             <a class="nav-item nav-link px-lg-4" href="#testimonial">Testimonial</a>
                             <a class="nav-item nav-link px-lg-4 unique-link" href="#contact">Contact Me</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
+                        </div><!-- .navbar-nav -->
+                    </div><!-- .navbar-collapse -->
+                </div><!-- .container -->
+            </nav><!-- .navbar -->
+        </header><!-- .masthead -->
+
+        <!-- Main Section -->
         <main>
-            <section class="hero d-flex" id="home">
+
+            <!-- Hero Section -->
+            <section class="hero d-flex">
                 <div class="container align-self-end">
                     <div class="row">
                         <div class="col-12 wow animate__animated animate__fadeInUp">
                             <h2 class="hero-title">Welcome! <br><span class="hero-name">I'm Deborah Joseph</span></h2>
                             <h3 class="hero-subtitle">Product Designer UX Researcher</h3>
                             <p class="hero-text">With innovative ideas, I strive working with a strong focus on design and user experience.</p>
-                            <button class="btn btn-primary d-none d-lg-inline-block" type="button">Hire Me</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                            <a href="#hire-me" class="btn-hire btn btn-primary d-none d-lg-inline-block">Hire Me</a>
+                        </div><!-- .col-12 -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </section><!-- .hero -->
 
+            <!-- Professions Section -->
             <section class="professions text-center">
                 <h2 class="profession-title section-title">What I Do</h2>
                 <div class="container">
@@ -64,41 +72,43 @@
                                 <img src="images/profession-img-01.png" alt="">
                                 <h3 class="profession-subtitle section-subtitle">User Experience Design</h3>
                                 <p>I am an exceptional product designer with over five years work experience in various tech industry. I design great user interface.</p>
-                            </div>
-                        </div>
+                            </div><!-- .profession -->
+                        </div><!-- .col-lg-4 -->
 
                         <div class="col-lg-4 wow animate__animated animate__slideInDown">
                             <section class="profession">
                                 <img src="images/profession-img-02.png" alt="">
                                 <h3 class="profession-subtitle section-subtitle">Brand Identity Design</h3>
                                 <p>I am an exceptional product designer with over five years work experience in various tech industry. I design great user interface.</p>
-                            </section>
-                        </div>
+                            </section><!-- .profession -->
+                        </div><!-- .col-lg-4 -->
 
                         <div class="col-lg-4 wow animate__animated animate__slideInRight">
                             <section class="profession">
                                 <img src="images/profession-img-03.png" alt="">
                                 <h3 class="profession-subtitle section-subtitle">Interactive Design</h3>
                                 <p>I am an exceptional product designer with over five years work experience in various tech industry. I design great user interface.</p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                            </section><!-- .profession -->
+                        </div><!-- .col-lg-4 -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </section><!-- .professions -->
 
+            <!-- About Section -->
             <section class="about text-center" id="about">
                 <h2 class="about-title section-title">About Me</h2>
                 <div class="about-desc container">
                     <div class="row overflow-hidden">
                         <div class="col-lg-4 wow animate__animated animate__slideInLeft">
                             <img class="img-fluid" src="images/about-img.png" alt="">
-                        </div>
+                        </div><!-- .col-lg-8 -->
+
                         <div class="col-lg-8 wow animate__animated animate__slideInRight">
                             <p class="about-text text-left">I am an exceptional product designer with over five years work experience in various tech industry. I design great user interface and I ensure my designs are neat and clean for the eyes. As a product designer and UX researcher, I design and build scalable products with amazing user interface. All the brands I have worked for are top and great brands with great customer satisfaction. Having over 4years experience designing great products, you can trust me for your project.</p>
-                            <button class="btn btn-primary" type="button">Hire Me</button>
-                        </div>
-                    </div>
-                </div>
+                            <a href="#hire-me" class="btn-hire btn btn-primary">Hire Me</a>
+                        </div><!-- .col-lg-8 -->
+                    </div><!-- .row -->
+                </div><!-- .about-desc -->
                 
                 <div class="bg-primary mx-3 mx-lg-0">
                     <div class="container">
@@ -106,78 +116,82 @@
                             <section class="accolade col-lg-3 wow animate__animated animate__bounceIn animate__delay-1s">
                                 <h3 class="accolade-subtitle section-subtitle">980</h3>
                                 <p>Successful Projects</p>
-                            </section>
+                            </section><!-- .accolade -->
                             
                             <section class="accolade col-lg-3 wow animate__animated animate__bounceIn animate__delay-1s">
                                 <h3 class="accolade-subtitle section-subtitle">335</h3>
                                 <p>Research Cases</p>
-                            </section>
+                            </section><!-- .accolade -->
                             
                             <section class="accolade col-lg-3 wow animate__animated animate__bounceIn animate__delay-1s">
                                 <h3 class="accolade-subtitle section-subtitle">150</h3>
                                 <p>Happy Clients</p>
-                            </section>
+                            </section><!-- .accolade -->
                             
                             <section class="accolade col-lg-3 wow animate__animated animate__bounceIn animate__delay-1s">
                                 <h3 class="accolade-subtitle section-subtitle">620</h3>
                                 <p>Beautiful Designs</p>
-                            </section>
-                        </div> 
-                    </div>
-                </div>
-            </section>
+                            </section><!-- .accolade -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .container -->
+            </section><!-- .about -->
 
+            <!--Projects Section -->
             <section class="projects" id="project"> 
                 <div class="projects-header text-center">
                     <h2 class="projects-title section-title">Latest Projects</h2>
                     <p  class="projects-text">Take a look at some of my latest pojects that speaks about user interface and elegant product designs.</p>    
-                </div>
+                </div><!-- .projects-header -->
+
                 <div class="container projects-body">
                     <div class="row overflow-hidden">
                         <div class="project col-lg-4 text-center wow animate__animated animate__slideInLeft">
                             <img class="img-fluid" src="images/projects-img-01.jpg" alt="">
-                        </div>
+                        </div><!-- .project -->
 
                         <div class="project col-lg-4 text-center wow animate__animated animate__slideInDown">
                             <img class="img-fluid" src="images/projects-img-02.jpg" alt="">
-                        </div>
+                        </div><!-- .project -->
 
                         <div class="project col-lg-4 text-center wow animate__animated animate__slideInRight">
                             <img class="img-fluid" src="images/projects-img-03.jpg" alt="">
-                        </div>
+                        </div><!-- .project -->
 
                         <div class="project col-lg-4 text-center wow animate__animated animate__slideInLeft">
                             <img class="img-fluid" src="images/projects-img-04.jpg" alt="">
-                        </div>
+                        </div><!-- .project -->
 
                         <div class="project col-lg-4 text-center wow animate__animated animate__slideInUp">
                             <img class="img-fluid" src="images/projects-img-05.jpg" alt="">
-                        </div>
+                        </div><!-- .project -->
 
                         <div class="project col-lg-4 text-center wow animate__animated animate__slideInRight">
                             <img class="img-fluid" src="images/projects-img-06.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+                        </div><!-- .project -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
 
+                <!-- Call to Section -->
                 <div class="call-to-action bg-primary mx-3 mx-lg-0">
                     <div class="container">
                         <div class="row text-center overflow-hidden">
                             <section class="col-lg-12 wow animate__animated animate__lightSpeedInRight">
                                 <h3 class="action-title section-subtitle">You’ve got any project you need an hands on?</h3>
                                 <p class="action-text">I am available to work on your project that needs professional touch. I’m just a click away</p>
-                                <button class="btn btn-primary" type="button">Hire Me</button>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                <a href="#hire-me" class="btn-hire btn btn-primary">Hire Me</a>
+                            </section><!-- .col-lg-12 -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .call-to-action -->
+            </section><!-- .projects -->
 
+            <!-- Testimonials Section -->
             <section class="testimonials text-center" id="testimonial">
                 <div class="testimonials-header text-center">
                     <h2 class="testimonials-title section-title">Testimonials</h2>
                     <p>Hear what my clients says about me</p>
-                </div>
+                </div><!-- .testimonial-header -->
                 
                 <div class="container">
                     <div class="row overflow-hidden">
@@ -186,51 +200,53 @@
                                 <img src="images/testimonials-img-01.png" alt="">
                                 <blockquote class="clientquote">Debby is a skilled designer who put in efforts to produce great products. I recommend her for your projects.</blockquote>
                                 <cite class="cite">Anthony B</cite>
-                            </div>
-                        </div>
+                            </div><!-- .testimonial -->
+                        </div><!-- .col-lg-4 -->
         
                         <div class="col-lg-4 wow animate__animated animate__slideInUp">
                             <div class="testimonial">
                                 <img src="images/testimonials-img-02.png" alt="">
                                 <blockquote class="clientquote">Debby is a skilled designer who put in efforts to produce great products. I recommend her for your projects.</blockquote>
                                 <cite class="cite">Lizzy J</cite>
-                            </div>  
-                        </div>
+                            </div><!-- .testimonial --> 
+                        </div><!-- .col-lg-4 -->
         
                         <div class="col-lg-4 wow animate__animated animate__slideInRight">
                             <div class="testimonial">
                                 <img src="images/testimonials-img-03.png" alt="">
                                 <blockquote class="clientquote">Debby is a skilled designer who put in efforts to produce great products. I recommend her for your projects.</blockquote>
                                 <cite class="cite">Daniel A</cite>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            </div><!-- .testimonial -->
+                        </div><!-- .col-lg-4 -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
                 
+                <!-- Brands Section -->
                 <section class="brands bg-primary mx-3 mx-lg-0">
                     <h3 class="brands-title section-subtitle">Brands I've worked with</h3>
                     <div class="container">
                         <div class="row overflow-hidden">
                             <div class="brand col-lg-3 wow animate__animated animate__bounceIn animate__delay-1s">
                                 <img class="img-fluid" src="images/brand-img-01.png" alt="">
-                            </div>
+                            </div><!-- .brand -->
 
                             <div class="brand col-lg-3 wow animate__animated animate__bounceIn animate__delay-1s">
                                 <img class="img-fluid" src="images/brand-img-02.png" alt="">
-                            </div>
+                            </div><!-- .brand -->
 
                             <div class="brand col-lg-3 wow animate__animated animate__bounceIn animate__delay-1s">
                                 <img class="img-fluid" src="images/brand-img-03.png" alt="">
-                            </div>
+                            </div><!-- .brand -->
 
                             <div class="brand col-lg-3 wow animate__animated animate__bounceIn animate__delay-1s">
                                 <img class="img-fluid" src="images/brand-img-04.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                            </div><!-- .brand -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </section><!-- .brands -->
             </section>
 
+            <!-- Contacts Section -->
             <section class="contacts overflow-hidden" id="contact">
                 <h2 class="contacts-title section-title text-center wow animate__animated animate__heartBeat">Get In Touch</h2>
                 <div class="container">
@@ -240,14 +256,14 @@
                             <h3 class="contacts-subtitle section-subtitle">Phone</h3>
                             <a href="tel:+234-803-652-2341">+234-803-652-2341</a>
                             <a href="tel:+234-803-652-2341">+234-803-652-2341</a>
-                        </section>
+                        </section><!-- .contact -->
 
                         <section class="contact col-lg-4 wow animate__animated animate__slideInUp">
                             <img class="img-fluid" src="images/mail-img.png" alt="">
                             <h3 class="contacts-subtitle section-subtitle">Email</h3>
                             <a href="mailto:hello@debbyjay.com">hello@debbyjay.com</a>
                             <a href="mailto:debbyjoseph@gmail.com">debbyjoseph@gmail.com</a>
-                        </section>
+                        </section><!-- .contact -->
 
                         <section class="contact col-lg-4 wow animate__animated animate__slideInRight">
                             <img class="img-fluid" src="images/location-img.png" alt="">
@@ -255,67 +271,75 @@
                             <address>
                                 <p class="px-5">Mile 23, California, Los Angeles, USA</p>
                             </address>
-                        </section>
-                    </div>
+                        </section><!-- .contact -->
+                    </div><!-- .row -->
 
+                    <!--  Social Media -->
                     <div class="social-md text-center">
                         <a class="wow animate__animated animate__flash" href="https://www.behance.net/" target="_blank">
                             <img src="images/behance-img.png" alt="">
-                        </a>
+                        </a><!-- .wow -->
 
                         <a class="wow animate__animated animate__flash" href="https://dribbble.com/" target="_blank">
                             <img src="images/dribbble-img.png" alt="">
-                        </a>
+                        </a><!-- .wow -->
 
                         <a class="wow animate__animated animate__flash" href="https://twitter.com/" target="_blank">
                             <img src="images/twitter-img.png" alt="">
-                        </a>
+                        </a><!-- .wow -->
+                    </div><!-- .social-md -->
 
-                    </div>
-
-                    <section>
+                    <!-- Contact Form -->
+                    <section id="hire-me">
                         <h4 class="form-title text-center">Any question about my rates and services? Kindly leave a message for me.</h4>
-                        <form class="contact-form" action="">
+
+                        <form class="contact-form" action="mail/contact.php" method="post" novalidate>
                             <div class="form-group">
                                 <label class="form-control-label sr-only" for="fullname">Full Name</label>
-                                <input class="form-control" type="text" id="fullname" name="fullname" placeholder="Full Name">    
-                            </div>
+                                <input class="form-control" type="text" id="fullname" name="fullname" placeholder="Full Name" required>    
+                                <div class="invalid-feedback" role="alert">This field is required, please give your full name</div>
+                            </div><!-- .form-group -->
                         
                             <div class="form-group">
                                 <label class="form-control-label sr-only" for="email">Email address</label>
-                                <input class="form-control" type="email" id="email" name="email" placeholder="Email address">
-                            </div>
+                                <input class="form-control" type="email" id="email" name="email" placeholder="Email address" required>
+                                <div class="invalid-feedback" role="alert">This field is required, please provide your valid email address</div>
+                            </div><!-- .form-group -->
                             
                             <div class="form-group">
                                 <label class="form-control-label sr-only" for="message-subject">Subject of the message</label>
                                 <input class="form-control" type="text" id="message-subject" name="message-subject" placeholder="Subject of the message">    
-                            </div>
+                            </div><!-- .form-group -->
                         
                             <div class="form-group">
                                 <label class="form-control-label sr-only" for="message-body">Message</label>
-                                <textarea class="form-control" name="message-body" id="message-body" cols="30" rows="10" placeholder="message"></textarea>    
-                            </div>
+                                <textarea class="form-control" name="message-body" id="message-body" cols="30" rows="10" placeholder="Message" required></textarea>    
+                                <div class="invalid-feedback" role="alert">This field is required, please leave a message for me</div>
+                            </div><!-- .form-group -->
                             
                             <div class="text-center">
-                                <button class="btn btn-primary" type="button">Send</button>
-                            </div>
-                        </form>
+                                <button class="btn btn-primary" type="submit">Send</button>
+                            </div><!-- .text-center -->
+                        </form><!-- .contact-form -->
                     </section>
-                </div>
-            </section>
+                </div><!-- .container -->
+            </section><!-- .contacts -->
         </main>
 
+        <!-- Contact Form -->
         <footer class="bg-primary text-center">
             <div>
-                <p>Copyright 2020 Debbs Portfolio. All rights reserved</p>
+                <p>Copyright &copy; 2020 Debbs Portfolio. All rights reserved</p>
             </div>
-        </footer>
+        </footer><!-- .bg-primary -->
 
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/popper/popper.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js" ></script>
-        <script src="vendor/wow/wow.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script> -->
+        <!-- jQuery JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA==" crossorigin="anonymous"></script>  
+        <!-- Wow JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+        <!-- Custom script for the template -->
         <script src="js/script.js"></script>
     </body>
 </html>

@@ -66,7 +66,7 @@ p {
 }
 
 .navbar-light .navbar-toggler {
-    border-color: transparent
+    border-color: transparent;
  }
 
  .navbar-nav .nav-link {
@@ -123,6 +123,14 @@ body {
     border-color: var(--btn-primary-color);
 }
 
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    color: var(--text-secondary-color);
+    background-color: var(--btn-primary-color);
+    border-color: var(--btn-primary-color);
+}
+
 .section-title {
     font-weight: bold;
     font-size: 32px;
@@ -153,8 +161,11 @@ body {
     line-height: 35px;
 }
 
+/* Masthead
+------------------------------- */
+
 .masthead {
-    background-color: var(--bg-primary-color);
+    background-color: var(--white);
     -moz-box-shadow: 1px 2px 4px rgba(214, 217, 223, .5);
     -webkit-box-shadow: 1px 2px 4px rgba(214, 217, 223, .5);
     box-shadow: 1px 2px 4px rgba(214, 217, 223, .5);
@@ -305,7 +316,6 @@ body {
 
 .call-to-action {
     padding-top: 76px;
-    padding-bottom: 57px;
 }
 
 .action-title {
@@ -314,6 +324,10 @@ body {
 
 .action-text {
     padding: 0 75px 41px 75px;
+}
+
+.call-to-action .btn-hire {
+    margin-bottom: 57px;
 }
 
 /* Testimonials
@@ -428,7 +442,7 @@ body {
 
 .social-md a {
     display: inline-block;
-    margin: 23px 30px 57px;
+    margin: 23px 30px 0;
     padding: 0;
 }
 
@@ -438,7 +452,7 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
-    padding: 0 30px 27px 30px;
+    padding: 57px 30px 27px 30px;
     margin-bottom: 0;   
 }
 
@@ -504,7 +518,7 @@ footer {
     }
 
     .form-title {
-        padding: 0 45px 54px 45px;
+        padding: 57px 45px 54px 45px;
     }
     
     .contact-form {
@@ -591,8 +605,11 @@ footer {
 
     .call-to-action {
         padding-top: 48px;
-        padding-bottom: 24px;
     }
+        
+    .call-to-action .btn-hire {
+        margin-bottom: 29px;
+    }   
 
     .testimonials-header {
         padding: 80px 0 38px;
