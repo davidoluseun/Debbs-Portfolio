@@ -26,10 +26,34 @@
                         }, 500);
                         return false;
 
-                    } //target.length
+                    } // Target.length
             } 
 
-        }); //smooth scrolling
+        }); // Smooth scrolling
+
+        //  OwlCarousel activation and settings
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            slideBy: 1,
+            responsive: {
+                //  Breakpoint from 0 up
+                0: {
+                    items: 1
+                },
+                //  Breakpoint from 576 up
+                576: {
+                    items: 2
+                },
+                //  Breakpoint from 992 up
+                992: {
+                    items: 3
+                }
+            }
+        });
 
         // Bootstrap form validation
         // Fetch the form to apply custom Bootstrap validation style to
