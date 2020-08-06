@@ -303,7 +303,7 @@ body {
     max-width: 300px;
 }
 
-/* Profession Section
+/* Professions Section
 -------------------------------*/
 
 .professions .col-lg-4:not(:last-of-type) {
@@ -382,7 +382,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Call To Action */
+/* Accolades */
 
 .accolade:first-of-type {
    padding-top: 49px;
@@ -423,7 +423,7 @@ body {
     margin-bottom: 0;
 }
 
-/* Call To Action */
+/* Call to Action */
 
 .call-to-action {
     padding-top: 76px;
