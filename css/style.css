@@ -335,9 +335,10 @@ body {
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
-    -moz-place-content: center;
-    -webkit-place-content: center;
-    place-content: center;
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -569,9 +570,14 @@ body {
 .twitter-icon {
     display: -ms-grid;
     display: grid;
-    place-content: center;
+    -webkit-align-content: center;
+    align-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     width: 48px;
     height: 48px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
 }
 
