@@ -2,12 +2,16 @@
 ------------------------------- */
 
 :root {
+    --text-primary-font: 'Poppins', sans-serif;
     --bg-primary-color:  #E5E5E5;
     --site-primary-color: #162447;
     --text-primary-color: #1B1B2F;
     --text-secondary-color: #F4F4F4;
     --btn-primary-color: #E43F5A;
-    --text-primary-font: 'Poppins', sans-serif;
+    --behance-color: #0057FF;
+    --dribbble-color: #EA4C89;
+    --twitter-color: #1DA1F2;
+    --prof-icons-bg-color: rgba(22, 36, 71, 0.1);
 }
 
 /* Bootstrap Overrides
@@ -221,6 +225,29 @@ body {
     margin-bottom: 0;
 }
 
+.hero-waving {
+    display: inline-block;
+    width: 25px;
+    transform-origin: right bottom;
+    animation: wave 1s infinite;
+}
+
+@keyframes wave {
+
+    0% {
+        transform: rotate(0deg); 
+    }
+    
+    50% {
+        transform: rotate(45deg);
+    }
+    
+    100% {
+        transform: rotate(0deg);
+    }
+    
+}
+
 .hero-name {
     font-weight: bold;
     font-size: 32px;
@@ -266,6 +293,25 @@ body {
     -webkit-transform: translateX(-155%);
     transform: translateX(-155%);
 } 
+
+.profession-icons-wrap {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -moz-place-content: center;
+    -webkit-place-content: center;
+    place-content: center;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: var(--prof-icons-bg-color);
+}
+
+.profession-icons-wrap span {
+    font-size: 35px;
+}
 
 .profession-subtitle {
     font-size: 18px;
@@ -463,6 +509,11 @@ body {
     padding-bottom: 50px;
 }
 
+.contact-icons {
+    color: var(--btn-primary-color);
+    font-size: 42px;
+}
+
 .contacts-subtitle {
     font-weight: 600;
     margin-top: 23px;
@@ -472,9 +523,38 @@ body {
 /* Social Media */
 
 .social-md a {
-    display: inline-block;
-    margin: 23px 30px 0;
     padding: 0;
+    margin: 23px 30px 0;
+    display: inline-block; 
+    text-decoration: none;
+}
+
+.behance-icon,
+.dribbble-icon,
+.twitter-icon {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.behance-icon {
+    background-color: var(--behance-color);
+}
+
+.dribbble-icon {
+    background-color: var(--dribbble-color);
+}
+
+.twitter-icon {
+    background-color: var(--twitter-color);
+}
+
+.social-md-icons {
+    color: var(--white);
+    font-size: 32px;
 }
 
 /* Contact Form */
