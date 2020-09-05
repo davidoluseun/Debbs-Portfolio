@@ -64,11 +64,11 @@
                 event.preventDefault();
                 event.stopPropagation();
                 
-                // if (form.checkValidity() === true) {
+                if (form.checkValidity() === true) {
                     sendMail();
-                // }
+                }
 
-                // form.classList.add("was-validated");
+                form.classList.add("was-validated");
             }, false);
         });
 
@@ -124,6 +124,11 @@
                         icon: "success",
                         button: "Close"
                     });
+
+                    // Grab .contact-form, clear all fields and remove was-validated class when is sent successfully
+                    var $contactForm =  $(".contact-form");
+                    $contactForm.trigger("reset");
+                    $contactForm.removeClass("was-validated");
                 }
 
             }
