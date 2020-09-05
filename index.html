@@ -340,7 +340,7 @@
                             </div><!-- .form-group -->
                             
                             <div class="text-center">
-                                <button class="btn btn-primary" type="submit">Send</button>
+                                <button class="btn btn-primary" id="btn-send" type="submit">Send</button>
                             </div><!-- .text-center -->
                         </form><!-- .contact-form -->
                     </section><!-- #hire-me -->
