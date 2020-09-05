@@ -27,11 +27,12 @@
     $email_body .= "Subject:" . "\n" . $subject . "\n\n" . "Message:" . "\n" . $message;
 
     // use wordwrap() if lines are longer than 70 characters
-    $email_body = wordwrap($email_body, 70)
+    $email_body = wordwrap($email_body, 70);
+
     $headers = "From: debbs@portfolio.com" . "\n" . "Reply-To: " . $email; 
 
     // Send mail
-    mail($to, $email_subject, $email_body, $headers);
+    // mail($to, $email_subject, $email_body, $headers);
 
     // Output "Sent" and terminate the script after sending mail
     exit("Sent")
