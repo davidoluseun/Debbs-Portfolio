@@ -40,7 +40,13 @@ p {
     padding: 8px 24px;
 }
 
-.btn-primary {
+.btn:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+}
+
+.btn-primary,
+.btn-primary:disabled {
     color: var(--text-secondary-color);
     background-color: var(--btn-primary-color);
     border: 1px solid var(--btn-primary-color);
