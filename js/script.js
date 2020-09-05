@@ -107,7 +107,6 @@
             });
 
             function successFn(response) {
-                console.log(response);
                 if (response == "Required") {
                     swal({
                         title: "Hi",
