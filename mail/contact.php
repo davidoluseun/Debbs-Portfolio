@@ -32,7 +32,7 @@
     $headers = "From: debbs@portfolio.com" . "\n" . "Reply-To: " . $email; 
 
     // Send mail
-    // mail($to, $email_subject, $email_body, $headers);
+    mail($to, $email_subject, $email_body, $headers);
 
     // Output "Sent" and terminate the script after sending mail
     exit("Sent")
